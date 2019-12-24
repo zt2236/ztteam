@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    邮箱:<input  type="text" name="username" id="username" />
+<div id="d1"></div>
+<button onclick="check()">按钮</button>
+    
+
+    <script>
+        function check(){
+            var str =  username.value
+            var last = str.indexOf("@");
+            
+            if( -1 == last){
+                alert("请输入正确的邮箱格式")
+                return;
+            }else{
+            d1.innerHTML = str.slice(str,last);
+            }
+        }
+    </script>
+</body>
+</html>

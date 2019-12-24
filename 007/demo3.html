@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     时间:<input  type="text" id="date" />
+    <div id="d1"></div>
+    <button onclick="check()">获取时间</button>
+    <script>
+        function check(){
+            var  str = date.value
+            var datel = new Date();
+            var year = datel.getFullYear();
+            var month = datel.getMonth()+1;
+            var d = datel.getDate();
+            var h = datel.getHours();
+            var m = datel.getMinutes();
+            var s = datel.getSeconds();
+
+                 if( str == 'yyyy'){
+                    d1.innerHTML =  year ;
+                }else if(str == 'yyyy-mm'){
+                    d1.innerHTML =  +year+"-"+month ;
+                }else if(str == 'yyyy-mm-dd'){
+                    d1.innerHTML =  +year+"-"+month +"-"+ d ;
+                }else if(str == 'yyyy-mm-dd-hh'){
+                    d1.innerHTML =  +year+"-"+month +"-"+ d +"-"+ h ;
+                }else if(str == 'yyyy-mm-dd-hh-min'){
+                    d1.innerHTML =  +year+"-"+month +"-"+ d +"-"+ h +"-"+  m;
+                }else if(str == 'yyyy-mm-dd-hh-min-ss'){
+                    d1.innerHTML =  +year+"-"+month +"-"+ d +"-"+ h +"-"+  m+"-"+s;
+                }
+        }
+    </script>
+</body>
+</html>

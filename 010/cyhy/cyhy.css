@@ -1,0 +1,236 @@
+body,p,h3,ul,li{
+    margin: 0;
+    padding: 0;
+}
+abbr{
+    color: #780101;
+    cursor: help;
+}
+/* 超链接的修饰 */
+a{
+    color: #ada364;
+}
+a:hover{
+    text-decoration: none;
+}
+h3{
+    color: #8f9947;
+    font-style: italic;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+p{
+    line-height: 1.5em;
+    margin-bottom: 13px;
+    font-size: 1.02em;
+}
+/* 这是body样式 */
+body{
+    background: url(images/bgMain.gif) repeat-y;
+    height: 2055px;
+    width: 1351px;
+    color: #0f330d;
+    /* font-size: 0.8em; */
+    /* font-family: "Lucida Grande", Georgia, "Times New Roman", Times, serif; */
+}
+
+
+/* 这是头部图片样式 */
+header{
+    height:155px;
+    width: 880px;
+    background-image: url(images/header.jpg);
+}
+
+
+/* 这是section正文样式 */
+
+.grapes{
+    background: url(images/grapes.gif);
+    float: left;
+    height: 351px;
+    width: 147px;
+    left: 220px;
+    top: 155px;padding-bottom: 2px;
+    margin-left: 220px;
+}
+
+.sec{
+    position: absolute;
+    width: 380px;
+    height: 395px;
+    /* border: 1px solid red; */
+    margin-left: 367px;
+   
+}
+.a1 {
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 32px;
+    width: 380px;
+     font-style: italic;
+    margin-top: 10px;
+}
+
+.a1 .p1{
+    line-height: 1.2em;
+    font-size: 0.85em;
+}
+.a1 .p2{
+    /* border: 1px solid blue; */
+    height: 16px;
+    width: 380px;
+    margin-left: 135px;
+    line-height: 1em;
+    font-size: 0.85em;
+    
+}
+.a2{
+    /* border: 1px solid orangered; */
+    height:290px;
+    width: 377px;
+    margin-top: 80px;
+    font-size: 0.85em;
+}
+
+/* 这是图片culSmall样式 */
+.culSmall{
+    display: block;
+    background:url(images/curlSmall.gif);
+    width: 122px;
+    height: 37px;
+    /* border: 1px solid yellow; */
+    margin-left: 115px;
+}
+
+/* 这是页面main样式 */
+.m{
+    width: 530px;
+    height: 1480px;
+    /* border: 1px solid blueviolet; */
+    margin-left: 230px;
+    margin-top: 395px;
+   /* line-height: 1em; */
+}   
+
+.m p{
+    font-size: 0.86em;
+}
+.bottle{
+    background: url(images/bottle.gif);
+    width: 171px;
+    height: 480px;
+    /* border: 1px solid red; */
+    float: right;
+    /* position: absolute; */
+    margin-top: 200px;
+    background-position: 0 30px;
+}
+.culSmall_1{
+    display: block;
+    background:url(images/curlSmall.gif);
+    width: 122px;
+    height: 37px;
+    /* border: 1px solid yellow; */
+    margin-left: 180px;
+}
+
+/* 这是底部样式 */
+.f{
+    /* border: 1px solid red; */
+    font-size: 0.85em;
+    width: 145px;
+    height: 40px;
+    margin-left: 625px;
+    font-style: italic;
+}
+
+/* 这侧边栏样式 */
+aside{
+    width: 220px;
+    height: 593.59px;
+    /* border: 1px solid #fff; */
+    position: absolute;
+    top: 155px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85em;
+    
+}
+ .top{
+     width: 218px;
+     height: 383.547px;
+     /* border: 1px solid #fff; */
+     background-color: #44410d;
+     border-bottom:1px solid #8e7253;
+ }
+
+aside h3{
+    color: #ccc180;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    /* 转换成大写 */
+    text-transform: uppercase;
+    margin-bottom: 7.5px;
+    padding-top: 8px;
+}
+ul{
+    padding-left: 28px;
+}
+.top ul li{
+    list-style-type: none;
+    list-style-image: url(images/bullet.gif);
+    padding-bottom: 6px;
+    
+}
+aside ul li a{
+    color: #fff;
+    font-weight:normal;
+    text-decoration: none;
+}
+aside ul li a:hover{
+    text-decoration: underline;
+}
+
+.design-name,.m1,.m2{
+    font-style: italic;
+    font-size: 0.85em;
+}
+.designer-name{
+    font-weight:bold;
+}
+
+.culSmall_2{
+    display: block;
+    background:url(images/curlBig.gif) no-repeat 0px 7px;
+    width: 142px;
+    height: 40px;
+    /* border: 1px solid yellow; */
+    
+} 
+.middle{
+    width: 218px;
+    height: 79px;
+    /* border: 1px solid #fff; */
+    border-top: 1px solid #8e7253;
+    border-bottom:1px solid #8e7253;
+    margin-top: 1px;
+}   
+.middle ul li, .bottom ul li{  
+    list-style-type: none;
+    list-style-image: url(images/bullet.gif);
+    padding-bottom: 3px;
+}     
+.bottom{
+    width: 218px;
+    height: 130px;
+    border-top: 1px solid #8e7253;
+    margin-top: 1px;
+} 
+.bottom abbr{
+    color: #ccc180;
+} 
+
+

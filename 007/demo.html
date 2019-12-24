@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="../day02/01_demo.js"></script> -->
+</head>
+<body>
+    <!-- <div>
+        邮箱：<input type="email" name="email"/>
+    </div> -->
+    邮箱：<input type="text" username="username" id="username" onblur="check()" palceholder="请输入用户名" /> 
+    <div id="id"></div>
+    <button>获取用户名</button>
+     <!-- <input type="submit" name="submit" value="搜索"/> -->
+
+<script >
+    function check(){
+        var array =username.value.split("@");
+        console.log(array);
+         if(array.length <2 || array.length >2){
+            alert("请输入正确的格式");
+         return;
+        }
+        id.innerHTML =array[0];
+        console.log(id.innerHTML)
+    }
+</script> 
+</body>
+</html

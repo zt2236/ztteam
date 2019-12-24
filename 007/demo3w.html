@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        时间:<input  type="text" id="date" />
+        <div id="d1"></div>
+        <button onclick="check()">获取时间</button>
+        <script>
+            function check(){
+               
+                var datel = new Date();
+                var year = datel.getFullYear();
+                var month = datel.getMonth()+1;
+                var dd = datel.getDate();
+                var h = datel.getHours();
+                var m = datel.getMinutes();
+                var s = datel.getSeconds();
+
+                var  str = date.value
+                var a =date.value.indexOf("yyyy",0);
+                var b =date.value.indexOf("mm",0);
+                var c =date.value.indexOf("dd",0);
+                var d =date.value.indexOf("hh",0);
+                var e =date.value.indexOf("min",0);
+                var f =date.value.indexOf("ss",0);
+                console.log(a,b,c,d,e,f)
+                if (a >-1){
+                    var aaa=(date.value.replace("yyyy",year))
+                }else{
+                    var aaa =date.value
+                }
+                if (b!= -1){
+                    var bbb=(aaa.replace("mm",month))
+                }else{
+                    var bbb =aaa
+                }
+                if (c != -1){
+                    var ccc=(bbb.replace("dd",dd))
+                }else{
+                    var ccc =bbb
+                }
+                if (d != -1){
+                    var ddd=(ccc.replace("hh",h))
+                }else{
+                    var ddd =ccc
+                }
+                if (e != -1){
+                    var eee=(ddd.replace("min",m))
+                }else{
+                    var eee =ddd
+                }
+                if (f != -1){
+                    var fff=(eee.replace("ss",s))
+                }else{
+                    var fff =eee
+                }
+                    d1.innerHTML = fff;
+            }
+        </script>
+</body>
+</html>
